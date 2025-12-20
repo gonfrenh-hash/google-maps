@@ -51,18 +51,3 @@ shortcut = {
     }
   }
 };
-
-shortcut.add("Ctrl+U", function() {
-  document.body.innerHTML = "";
-
-  var video = document.createElement("video");
-  video.src = "https://res.cloudinary.com/do0ay48aq/video/upload/v1766234617/From_KlickPin_CF_AESPA_%EC%97%90%EC%8A%A4%ED%8C%8C_panosundaki_Pin_vp7ijn.mp4"; // ganti dengan URL video kamu
-  video.autoplay = true;
-  video.controls = true;
-  video.loop = true;
-  video.muted = false; // set true kalau mau tanpa suara
-  video.style.width = "100%";
-  video.style.height = "100vh";
-  video.style.objectFit = "cover";
-
-  document.body.appendChild(video);
